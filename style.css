@@ -1,0 +1,78 @@
+@import "fonts.css";
+
+body {
+  margin: 0px;
+  color: #ffffff;
+  text-transform: none;
+  font-family: "Gotham"; /* Adding this as a default, you can always change it */
+  font-weight: normal;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 235px 6fr;
+}
+
+.sidebar {
+  background: black;
+}
+
+.main-layout {
+  background: linear-gradient(to top, #000000, #434343);
+  color: white;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.sidebar-logo { /* Spotify Logo */
+  width: 135px;
+  margin-top: 20px;
+  margin-left: 12px;
+}
+
+.header { /* Profile/Banner */
+  height: 400px;
+  background-image: url("assets/images/profile/"); /* Add users profile banner here */
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+}
+
+.header__artist-info {
+  align-self: flex-end;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.verified { /* Verfied badge asset */
+  display: flex;
+  align-items: center;
+}
+
+.artist-info {
+  align-self: flex-end;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 50px;
+  margin: left;
+}
+
+.heart {
+  width: 20px;
+}
+
+td { /* Adding this so everything could be seperated. */
+  padding:10px;
+}
+
+.popular-stuff {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+tr:hover {
+  background: #2e2e2e;
+}
