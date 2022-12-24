@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
+
+    <!-- sidebar icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
     <title>Spotify Profile | LAYOUT</title>
 </head>
 <body>
@@ -12,21 +19,42 @@
 
         <div class="sidebar">
             <img src="assets/images/logos/spotify.svg" class="sidebar-logo" alt="spotify">
-            <p>Home</p>
-            <p>Search</p>
-            <p>Your library</p>
-            <br>
-            <p>Create Playlist</p>
-            <p>Liked Songs</p>
-            <hr size="1">
-            <p>My Playlist #1</p>
+            <ul class="sidebar__navbar">
+                <li class="sidebar__link"> <!-- Theres probably a better way to do this, but fuck it. -->
+                    <span class="material-symbols-outlined"> Home</span>
+                    <a href="#">Home</a>
+                </li>
+                <br>
+                <li class="sidebar__link">
+                    <span class="material-symbols-outlined">Search</span>
+                    <a href="#">Search</a>
+                </li>
+                <br>
+                <li class="sidebar__link">
+                    <span class="material-symbols-outlined">library_music</span>
+                    <a href="#">Library</a>
+                </li>
+                <br>
+                <br>
+                <li class="sidebar__link">
+                    <span class="material-symbols-outlined">playlist_add</span>
+                    <a href="#">Create Playlist</a>
+                </li>
+                <br>
+                <li class="sidebar__link">
+                    <span class="material-symbols-outlined">favorite</span>
+                    <a href="#">Liked Songs</a>
+                </li>
+                <hr size="1">
+                <p>My Playlist #1</p>
+            </ul>
         </div>
 
         <div class="main-layout"> <!-- Main layout of the whole website -->
 
             <div class="header">
                 <div class="artist-info">
-                    <p class="verified"><img src="assets/images/logos/verified.svg">verified artist</p>
+                    <p class="verified"><img src="assets/images/logos/verified.svg">Verified Artist</p>
                     <h1><!-- Insert Artists Name here --></h1>
                     <p><!-- Insert Monthly Listeners here --></p>
                 </div>
@@ -40,7 +68,7 @@
                             <!-- Song 1 -->
                             <tr>
                                 <td>1</td>
-                                <td><img src="assets/images/albums/"</td> <!-- Add album cover here-->
+                                <td><img src="assets/images/albums/"></td> <!-- Add album cover here-->
                                 <td><!-- Add song name here --></td>
                                 <td><!-- Add total listens here --></td>
                                 <td><img src="assets/images/logos/heart.png" alt="heart" class="heart"></td>
@@ -49,7 +77,7 @@
                              <!-- Song 2 -->
                              <tr>
                                 <td>2</td>
-                                <td><img src="assets/images/albums/"</td> <!-- Add album cover here-->
+                                <td><img src="assets/images/albums/"></td> <!-- Add album cover here-->
                                 <td><!-- Add song name here --></td>
                                 <td><!-- Add total listens here --></td>
                                 <td><img src="assets/images/logos/heart.png" alt="heart" class="heart"></td>
@@ -58,7 +86,7 @@
                              <!-- Song 3 -->
                              <tr>
                                 <td>3</td>
-                                <td><img src="assets/images/albums/"</td> <!-- Add album cover here-->
+                                <td><img src="assets/images/albums/"></td> <!-- Add album cover here-->
                                 <td><!-- Add song name here --></td>
                                 <td><!-- Add total listens here --></td>
                                 <td><img src="assets/images/logos/heart.png" alt="heart" class="heart"></td>
@@ -67,7 +95,7 @@
                              <!-- Song 4 -->
                              <tr>
                                 <td>4</td>
-                                <td><img src="assets/images/albums/"</td> <!-- Add album cover here-->
+                                <td><img src="assets/images/albums/"></td> <!-- Add album cover here-->
                                 <td><!-- Add song name here --></td>
                                 <td><!-- Add total listens here --></td>
                                 <td><img src="assets/images/logos/heart.png" alt="heart" class="heart"></td>
@@ -76,7 +104,7 @@
                              <!-- Song 5 -->
                              <tr>
                                 <td>5</td>
-                                <td><img src="assets/images/albums/"</td> <!-- Add album cover here-->
+                                <td><img src="assets/images/albums/"></td> <!-- Add album cover here-->
                                 <td><!-- Add song name here --></td>
                                 <td><!-- Add total listens here --></td>
                                 <td><img src="assets/images/logos/heart.png" alt="heart" class="heart"></td>
@@ -89,15 +117,55 @@
                     <h2>Artist Pick</h2>
                     <table>
                       <tr>
-                        <td><img src="assets/images/albums/"><!-- Add Artist Pick song & cover here --></td>
+                        <td><img style="vertical-align:middle" src="assets/images/albums/"><!-- Add Artist Pick song & cover here --></td>
                       </tr>
                     </table>
                   </div>
-
                 </div>
+
+              <div class="popular-releases">
+                <h2>Discography</h2>
+
+                <div class="discography">
+                    <!-- Song 1 -->
+                    <div class="disc-box">
+                        <img class="disco-imgs" src="assets/images/albums/">
+                        <p><!-- Add song name here --></p>
+                        <p><!-- Add year of the the album, & label --></p>
+                    </div>
+
+                     <!-- Song 2 -->
+                     <div class="disc-box">
+                        <img class="disco-imgs" src="assets/images/albums/">
+                        <p><!-- Add song name here --></p>
+                        <p><!-- Add year of the the album, & label --></p>
+                    </div>
+
+                     <!-- Song 3 -->
+                     <div class="disc-box">
+                        <img class="disco-imgs" src="assets/images/albums/">
+                        <p><!-- Add song name here --></p>
+                        <p><!-- Add year of the the album, & label --></p>
+                    </div>
+
+                     <!-- Song 4 -->
+                     <div class="disc-box">
+                        <img class="disco-imgs" src="assets/images/albums/">
+                        <p><!-- Add song name here --></p>
+                        <p><!-- Add year of the the album, & label --></p>
+                    </div>
+
+                     <!-- Song 5 -->
+                     <div class="disc-box">
+                        <img class="disco-imgs" src="assets/images/albums/">
+                        <p><!-- Add song name here --></p>
+                        <p><!-- Add year of the the album, & label --></p>
+                    </div>
+                </div>    
+              </div>
+
             </div>
         </div>
     </div>
-    <!-- End of code -->
 </body>
 </html>
