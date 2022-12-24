@@ -25,7 +25,6 @@ ul {
   list-style-type: none;
 }
 
-
 a {
   display: flex;
   padding: 5px;
@@ -98,9 +97,13 @@ hr {
   margin-bottom: 20px;
 }
 
-.verified { /* Verfied badge asset */
+.verified {
   display: flex;
   align-items: center;
+}
+
+.verified-badge {
+  width: 35px;
 }
 
 .artist-info {
@@ -130,7 +133,7 @@ hr {
 .disc-box {
   border-radius: 15px;
   padding: 15px;
-  background-color: #1a1a1a; /* NOT REAL COLOR but it looks similar... */
+  background-color: #1a1a1a;
 }
 
 .disco-imgs {
