@@ -17,11 +17,20 @@ body {
   background: black;
 }
 
+.sidebar__link {
+  display: flex;
+  align-items: center;
+}
+
 .main-layout {
   background: linear-gradient(to top, #000000, #434343);
   color: white;
   height: 100vh;
   overflow-y: scroll;
+}
+
+.main-layout::-webkit-scrollbar { /* prevents other scroll bars from appearing when scrolling through the pg */
+  display: none;
 }
 
 .sidebar-logo { /* Spotify Logo */
@@ -32,7 +41,7 @@ body {
 
 .header { /* Profile/Banner */
   height: 400px;
-  background-image: url("assets/images/profile/"); /* Add users profile banner here */
+  background-image: url("assets/images/profiles/"); /* Add users profile banner here */
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -55,17 +64,32 @@ body {
   margin-bottom: 20px;
 }
 
-img {
+.heart { /* heart asset used to like songs */
+  width: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+img { /* This applys to images in general, dont mind this */
   width: 50px;
   margin: left;
 }
 
-.heart {
-  width: 20px;
-}
-
 td { /* Adding this so everything could be seperated. */
   padding:10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  display: flex;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
 }
 
 .popular-stuff {
@@ -73,6 +97,29 @@ td { /* Adding this so everything could be seperated. */
   justify-content: space-evenly;
 }
 
+.popular-releases {
+  padding-left: 20px;
+}
+
+.discography {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.disc-box {
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #1a1a1a; /* NOT REAL COLOR but it looks similar... */
+}
+
+.disco-imgs {
+  width: 150px;
+}
+
 tr:hover {
+  background: #2e2e2e;
+}
+
+.disc-box:hover {
   background: #2e2e2e;
 }
