@@ -8,6 +8,43 @@ body {
   font-weight: normal;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+img { /* This applys to images in general, dont mind this */
+  width: 50px;
+  margin: left;
+}
+
+td { /* Adding this so everything could be seperated. */
+  padding:10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+a {
+  display: flex;
+  padding: 5px;
+  color: darkgray;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+tr:hover {
+  background: #2e2e2e;
+}
+
+hr {
+  margin-right: 20px;
+}
+
 .box {
   display: grid;
   grid-template-columns: 235px 6fr;
@@ -17,9 +54,23 @@ body {
   background: black;
 }
 
+.sidebar-logo { /* Spotify Logo */
+  width: 135px;
+  margin-top: 20px;
+  margin-left: 12px;
+}
+
 .sidebar__link {
   display: flex;
   align-items: center;
+}
+
+.side-text {
+  color:darkgray;
+}
+
+.side-text:hover {
+  color: white;
 }
 
 .main-layout {
@@ -31,12 +82,6 @@ body {
 
 .main-layout::-webkit-scrollbar { /* prevents other scroll bars from appearing when scrolling through the pg */
   display: none;
-}
-
-.sidebar-logo { /* Spotify Logo */
-  width: 135px;
-  margin-top: 20px;
-  margin-left: 12px;
 }
 
 .header { /* Profile/Banner */
@@ -68,30 +113,6 @@ body {
   width: 20px;
 }
 
-table {
-  border-collapse: collapse;
-}
-
-img { /* This applys to images in general, dont mind this */
-  width: 50px;
-  margin: left;
-}
-
-td { /* Adding this so everything could be seperated. */
-  padding:10px;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  display: flex;
-  padding: 5px;
-  color: white;
-  text-decoration: none;
-}
-
 .popular-stuff {
   display: flex;
   justify-content: space-evenly;
@@ -114,10 +135,6 @@ a {
 
 .disco-imgs {
   width: 150px;
-}
-
-tr:hover {
-  background: #2e2e2e;
 }
 
 .disc-box:hover {
