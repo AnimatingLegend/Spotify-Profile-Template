@@ -148,9 +148,14 @@ hr {
   background: #2e2e2e;
 }
 
-.about { /* About the artist section*/
-  border-radius: 30px;
+.about-img { /*  */
+  width: 850px;
+  border-radius: 15px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: none; /* this is staying by default since idk what size your imgs are. */
+  background-size: 951px 570px auto;
+}
+
+.about-img:hover { /*  */
+  width: 865px;
 }
