@@ -56,12 +56,16 @@ hr {
 .sidebar-logo { /* Spotify Logo */
   width: 135px;
   margin-top: 20px;
-  margin-left: 12px;
+  margin-left: 30px;
 }
 
 .sidebar__link {
   display: flex;
   align-items: center;
+}
+
+.sidebar__navbar {
+  margin-right: 30px;
 }
 
 .side-text {
@@ -142,4 +146,11 @@ hr {
 
 .disc-box:hover {
   background: #2e2e2e;
+}
+
+.about { /* About the artist section*/
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: none; /* this is staying by default since idk what size your imgs are. */
 }
